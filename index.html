@@ -10,29 +10,28 @@
 <body>
     <div id = "container">
         <h1>Contact Me</h1>
-        <form>
-            <div id="contact">
-                <div class="form-group">
-                    <label for="inputName">Full Name</label>
-                    <input type="name" class="form-control" id="inputName" placeholder="Enter Name">
-                </div>
-                <br /> 
-
-                <div class="form-group">
-                    <label for="inputEmail">Email</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Enter Email">
-                </div>
-                <br />
-
-                <div class="form-group">
-                    <label for="inputMessage">Message</label>
-                    <textarea type="message" class="form-control" id="inputMessage" rows="4" placeholder="Enter Message"></textarea>
-                </div>
-                <br />
+        <form onsubmit="submitForm()"">
+            <div class="form-group">
+                <label for="inputName">Full Name</label>
+                <input type="name" class="form-control" id="inputName" placeholder="Enter Name">
             </div>
+            <br /> 
+
+            <div class="form-group">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Enter Email">
+            </div>
+            <br />
+
+            <div class="form-group">
+                <label for="inputMessage">Message</label>
+                <textarea type="message" class="form-control" id="inputMessage" rows="4" placeholder="Enter Message"></textarea>
+            </div>
+            <br />
 
             <button type="submit" class="btn btn-dark">Submit</button>
         </form>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
